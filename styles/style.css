@@ -22,11 +22,14 @@ img {
 
 /*==== VARIABLES =======================================*/
 :root {
+    --header-height: 4em;
+
     /* colors */
     --hue: 356;
     
     /* HSL color mode */
     --base-color: hsl(var(--hue), 100%, 42%);
+    --base-color-second: hsl(calc(var(--hue) - 5), 100%, 42%);
 
     /* fonts */
   --title-font-size: 1.875rem;
@@ -52,4 +55,44 @@ body {
     color: black;
     -webkit-font-smoothing: antialiased;
 }
-/*====      =======================================*/
+
+.button {
+    align-items: center;
+    background-color: var(--base-color);
+    border-radius: .8em;
+    color: white;
+    display: inline-flex;
+    font: 400 1.5em var(--title-font);
+    height: 2.5em;
+    padding: .8em 4em;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: var(--base-color-second);
+    color: black;
+}
+
+/*==== LAYOUT =======================================*/
+.container {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.grid {
+    display: grid;
+    gap: 2em;
+}
+
+/* section {
+    padding: var(--header-height) 0;
+} */
+
+section .title {
+    margin-bottom: 1em;
+}
+
+#home .text {
+    text-align: center;
+}
