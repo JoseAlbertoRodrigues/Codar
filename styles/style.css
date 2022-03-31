@@ -93,6 +93,26 @@ section .title {
     margin-bottom: 1em;
 }
 
+/* #header {
+    margin-bottom: 2em;
+    display: inline-flex;
+    width: 100%;
+} */
+
+/*==== LOGO =======================================*/
+.logo {
+    font: 700 3.8em var(--title-font);
+    color: var(--base-color);
+}
+
+.logo span {
+    color: black;
+}
+
+.logo-alt span {
+    color: white;
+}
+
 #home .text {
     text-align: center;
 }
