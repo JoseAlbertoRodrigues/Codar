@@ -113,6 +113,11 @@ section .title {
     color: white;
 }
 
+/*==== NAVIGATION =======================================*/
+nav {
+    
+}
+
 #home .text {
     text-align: center;
 }
