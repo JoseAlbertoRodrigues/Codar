@@ -174,8 +174,19 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 }
 
 /*==== SERVICES =======================================*/
+#services .container {
+    margin: 0;
+    margin-bottom: calc(var(--header-height) + 13em);
+}
+
+#services .image {
+    margin-right: 6.5em;
+    margin-left: 6em;
+    margin-bottom: 1em;
+}
+
 .cards.grid .card {
-    gap: 2em;
+    gap: 1em;
 }
 
 .card {
@@ -185,10 +196,6 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
     margin-right:auto;
 }
 
-.card li {
-    font: 500 1.5em var(--title-font);
-}
-
 .card i {
     display: inline-flex;
     margin-right: 1.5em;
@@ -196,4 +203,9 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
     color: white;
     padding: .3em;
     border-radius: 1em;
+}
+
+.card .title {
+    font: 500 1.5em var(--title-font);
+    color: black;
 }
