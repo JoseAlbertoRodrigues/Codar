@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Isso garante que o preenchimento e a borda sejam incluídos na largura e altura totais dos elementos. */
 }
 
 ul, li {
@@ -64,7 +64,7 @@ body {
     display: inline-flex;
     font: 400 1.5em var(--title-font);
     height: 2.5em;
-    padding: .8em 4em;
+    padding: 1.5em 4em;
     justify-content: center;
     transition: background 0.3s;
 }
@@ -90,7 +90,7 @@ body {
 } */
 
 section .title {
-    margin-bottom: 1em;
+    margin-bottom: .8em;
 }
 
 #header {
@@ -148,6 +148,7 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 
 #home .container {
     margin: 0;
+    margin-bottom: calc(var(--header-height) + 13em);
 }
 
 #home .image {
@@ -170,4 +171,29 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 #home .text h2 {
     font: 700 3.6em var(--title-font);
     color: var(--base-color);
+}
+
+/*==== SERVICES =======================================*/
+.cards.grid .card {
+    gap: 2em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card li {
+    font: 500 1.5em var(--title-font);
+}
+
+.card i {
+    display: inline-flex;
+    margin-right: 1.5em;
+    background: var(--base-color);
+    color: white;
+    padding: .3em;
+    border-radius: 1em;
 }

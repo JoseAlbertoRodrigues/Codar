@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?kzvu5r');
+  src:  url('fonts/icomoon.eot?kzvu5r#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kzvu5r') format('truetype'),
+    url('fonts/icomoon.woff?kzvu5r') format('woff'),
+    url('fonts/icomoon.svg?kzvu5r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-alt:before {
+  content: "\e900";
+}
+.icon-checkmark:before {
+  content: "\e900";
+}
+.icon-tick:before {
+  content: "\e900";
+}
+.icon-checkmark1:before {
+  content: "\e901";
+}
+.icon-tick1:before {
+  content: "\e901";
+}
+.icon-checkmark2:before {
+  content: "\ea10";
+}
+.icon-checkmark21:before {
+  content: "\ea11";
+}
+.icon-arrow-up:before {
+  content: "\e916";
+}
+.icon-github:before {
+  content: "\e907";
+}
+.icon-github1:before {
+  content: "\e90c";
+}
+.icon-youtube:before {
+  content: "\e90d";
+}
+.icon-menu:before {
+  content: "\e90e";
+}
+.icon-map-pin:before {
+  content: "\e90f";
+}
+.icon-x:before {
+  content: "\e910";
+}
+.icon-mail:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.icon-facebook:before {
+  content: "\e913";
+}
+.icon-phone:before {
+  content: "\e914";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-whatsapp:before {
+  content: "\e902";
+}
