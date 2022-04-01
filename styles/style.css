@@ -1,5 +1,5 @@
 /*==== RESET =======================================*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 * {
     margin: 0;
@@ -32,10 +32,10 @@ img {
     --base-color-second: hsl(calc(var(--hue) - 5), 100%, 42%);
 
     /* fonts */
-  --title-font-size: 1.875rem;
-  --subtitle-font-size: 1rem;
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
 
-  --title-font: 'Roboto', sans-serif;
+    --title-font: 'Roboto', sans-serif;
 }
 
 /*==== BASE =======================================*/
@@ -50,7 +50,7 @@ body {
 }
 
 .title {
-    font: 700 var(--title-font-size) var(--title-font);
+    font: 500 var(--title-font-size) var(--title-font);
     /* color: var(--base-color); */
     color: black;
     -webkit-font-smoothing: antialiased;
@@ -101,6 +101,7 @@ section .title {
 /*==== LOGO =======================================*/
 .logo {
     font: 700 3.8em var(--title-font);
+    font-style: italic;
     color: var(--base-color);
 }
 
@@ -141,7 +142,32 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 }
 
 /*==== HOME =======================================*/
+#home {
+    overflow: hidden;
+}
+
+#home .container {
+    margin: 0;
+}
+
+#home .image {
+    margin-right: 4.5em;
+    margin-left: 3.5em;
+    margin-bottom: 2em;
+}
 
 #home .text {
+    margin-right: 1em;
+    margin-left: 1em;
     text-align: center;
+}
+
+#home .text p {
+    font: 700 1.5em var(--title-font);
+    margin-left: -1em;
+}
+
+#home .text h2 {
+    font: 700 3.6em var(--title-font);
+    color: var(--base-color);
 }
