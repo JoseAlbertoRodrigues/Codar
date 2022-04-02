@@ -176,7 +176,7 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 /*==== SERVICES =======================================*/
 #services .container {
     margin: 0;
-    margin-bottom: calc(var(--header-height) + 13em);
+    margin-bottom: calc(var(--header-height) + 3em);
 }
 
 #services .image {
@@ -233,4 +233,62 @@ input[type="tel"] {
 #services .tel a.button {
     padding: 1.4em 2em;
     margin: 0 auto;
+}
+
+/*==== TESTIMONIALS =======================================*/
+#testimonials .container {
+    grid-auto-flow: row;
+    justify-content: space-between;
+    /* height: 100%; */
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    background: #E1E1E1;
+}
+
+#testimonials .testimonial {
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    grid-template-areas:
+    "item-1 item-2 item-2"
+    /* "item-1 item-2 item-2"
+    "item-1 item-3 item-3" */
+}
+
+#testimonials .circle {
+    content: '';
+    width: 80px;
+    height: 80px;
+    border-radius: 4em;
+    margin: 2em 1em 0 1.5em;
+    background: var(--base-color);
+}
+  
+#testimonials blockquote {
+    width: 100%;
+    height: 100%;
+}
+
+#testimonials blockquote p {
+    font: 500 1em var(--title-font);
+    margin-left: -1.5em;
+    margin-right: -1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    color: black;
+}
+
+#testimonials blockquote p span {
+    font: 700 1em var(--title-font);
+}
+
+#testimonials blockquote cite.item-2 {
+    display: block;
+    margin-bottom: -1em;
+}
+
+#testimonials blockquote > cite {
+    font-style: normal;
+    font: 500 1.8em var(--title-font);
+    margin-left: -1em;
 }
