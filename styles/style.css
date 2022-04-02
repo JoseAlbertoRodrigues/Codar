@@ -185,6 +185,9 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
     margin-bottom: 1em;
 }
 
+.cards {
+    margin-bottom: 1em;
+}
 .cards.grid .card {
     gap: 1em;
 }
@@ -206,6 +209,28 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 }
 
 .card .title {
-    font: 500 1.5em var(--title-font);
+    font: 400 1.6em var(--title-font);
     color: black;
+}
+
+input[type="tel"] {
+    background: #E1E1E1;
+    border: 0 none;
+    font-size: 1.3em;
+    border-radius: 1em;
+}
+
+#services .tel input#phone {
+    padding: 1.1em 1.3em;
+    margin: -.6em auto;
+}
+
+#services .tel.grid label {
+    text-align: center;
+    font: 600 1.6em var(--title-font);
+}
+
+#services .tel a.button {
+    padding: 1.4em 2em;
+    margin: 0 auto;
 }
