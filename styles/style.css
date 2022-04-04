@@ -109,6 +109,12 @@ section .title {
     color: black;
 }
 
+.logo-alt {
+    font: 600 3.8em var(--title-font);
+    font-style: italic;
+    color: white;
+}
+
 .logo-alt span {
     color: white;
 }
@@ -291,4 +297,79 @@ input[type="tel"] {
     font-style: normal;
     font: 500 1.8em var(--title-font);
     margin-left: -1em;
+}
+
+/*==== FOOTER =======================================*/
+footer {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+}
+
+footer.section {
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+footer a.logo-alt {
+    margin-left: 25%;
+    /* transform: translateX(-%); */
+}
+
+footer .brand p {
+    color: white;
+    text-align: center;
+    font: 300 1.5em var(--title-font);
+    margin-bottom: 1.5em;
+}
+
+footer .brand p.title {
+    text-align: left;
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+footer h3 {
+    color: white;
+    font: 500 1.8em var(--title-font);
+}
+
+footer h3#social {
+    margin-top: -2em;
+    padding-top: -2em;
+}
+
+footer .brand a#contact {
+    display: block;
+    padding-top: -1em;
+    color: white;
+    text-decoration: underline;
+    margin-top: -1.2em;
+    font-weight: 300;
+}
+
+footer .brand a#contact:hover {
+    color: blue;
+}
+
+footer i {
+    font-size: 3rem;
+    color: var(--base-color);
+}
+
+footer .social {
+    margin-top: -5.5em;
+    margin-left: .5em;
+    grid-auto-flow: column;
+    width: fit-content;
+}
+  
+footer .social a {
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover {
+    transform: translateY(-8px);
 }
