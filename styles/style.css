@@ -32,8 +32,8 @@ img {
     --base-color-second: hsl(calc(var(--hue) - 5), 100%, 42%);
 
     /* fonts */
-    --title-font-size: 1.875rem;
-    --subtitle-font-size: 1rem;
+    --title-font-size: 1.875em;
+    --subtitle-font-size: 1em;
 
     --title-font: 'Roboto', sans-serif;
 }
@@ -371,4 +371,39 @@ footer .social a {
 
 footer .social a:hover {
     transform: translateY(-8px);
+}
+
+/* medium devices: 768 > */
+@media (min-width: 768px) {
+    /* reusable classes */
+    :root {
+        --title-font-size: 1.5em;
+        --subtitle-font-size: 0.9em;
+    }
+
+    .container {
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    header a.logo {
+        left: 2em;
+        font: 700 2em var(--title-font);
+        font-style: italic;
+    }
+
+    .section {
+        padding: 5em 0;
+    }
+    
+    .section .title {
+        margin-bottom: 1em;
+    }
+
+    .button {
+        height: 3em;
+    }
+
+
 }
