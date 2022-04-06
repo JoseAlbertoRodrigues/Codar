@@ -95,6 +95,8 @@ section .title {
 
 #header {
     margin-bottom: 4em;
+    display: flex;
+    background: goldenrod;/* tirar essa linha*/ 
     width: 100%;
 }
 
@@ -120,14 +122,14 @@ section .title {
 }
 
 /*==== NAVIGATION =======================================*/
-nav div a.logo {
-    top: 2em;
+nav a.logo {
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom: .5em;
 
 }
+
 nav .menu ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -405,5 +407,58 @@ footer .social a:hover {
         height: 3em;
     }
 
+    /* navigation */
+    nav {
+        height: 5em;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
 
+    nav ul li a:hover {
+        color: var(--base-color);
+    }
+
+    nav ul li a::after {
+        background: var(--base-color);
+    }
+
+    nav .menu ul {
+        display: inline-flexbox;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    nav .menu ul li a{
+        text-align: center;
+        background: grey;
+    }
+
+    nav .menu ul li a.title {
+        font: 400 1rem var(--body-color);
+        -webkit-font-smoothing: antialiased;
+        margin-right: 1.5rem;
+    }
+    
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
+    }
+
+    nav .menu ul li:last-child {
+        opacity: 1;
+        display: flex;
+        visibility: visible;
+    }
+
+    /* nav .menu #login {
+        background: red;
+        display: inline-flex;
+        padding: 1em 2em;
+        align-items: flex-end;
+        justify-content: first baseline;
+    } */
 }
