@@ -229,9 +229,18 @@ input[type="tel"] {
     border-radius: 1em;
 }
 
+#services .tel {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
 #services .tel input#phone {
     padding: 1.1em 1.3em;
-    margin: -.6em auto;
+    /* margin: -.6em auto; */
+    /* margin-left: 3.5em; */
+    margin-bottom: 1em;
 }
 
 #services .tel.grid label {
@@ -241,7 +250,7 @@ input[type="tel"] {
 
 #services .tel a.button {
     padding: 1.4em 2em;
-    margin: 0 auto;
+    /* margin-left: 3.5em; */
 }
 
 /*==== TESTIMONIALS =======================================*/
@@ -512,5 +521,70 @@ footer .social a:hover {
     /* buttom */
     #home .text a.button {
         padding: 1.2em 2.5em;
+    }
+
+    /* SERVICES */
+    #services .container {
+        margin-right: auto;
+        margin-left: auto;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    #services .image {
+        position: absolute;
+        right: -4em;
+        width: 50%;
+        
+    }
+
+    #services .cards {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 50%;
+    }
+    
+    #services .tel {
+        bottom: 4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+    }
+
+    .card .title {
+        font: 400 1.2em var(--title-font);
+        margin-bottom: -.2em;
+        margin-left: -4em;
+        color: black;
+    }
+
+    input[type="tel"] {
+        background: #E1E1E1;
+        border: 0 none;
+        font-size: 1em;
+        border-radius: 1em;
+    }
+
+    #services .tel.grid label {
+        text-align: left;
+        margin-left: 2.5em;
+        font: 600 1.4em var(--title-font);
+    }
+    
+    #services .tel input#phone {
+        padding: 1.1em 1.3em;
+        margin-left: 3.5em;
+    }
+    
+    #services .tel a.button {
+        padding: 1.7em 4em;
+        /* margin-top: -4.7em; */
+        margin-left: 0.5em;
+        border-radius: 1em;
     }
 }
