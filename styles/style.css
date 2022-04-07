@@ -196,6 +196,7 @@ nav .menu ul li:last-child { /*esconder o ultimo botão*/
 .cards {
     margin-bottom: 1em;
 }
+
 .cards.grid .card {
     gap: 1em;
 }
@@ -384,7 +385,7 @@ footer .social a:hover {
     }
 
     .container {
-        max-width: 800px;
+        max-width: 900px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -476,5 +477,40 @@ footer .social a:hover {
     .button:hover {
         background-color: var(--base-color-second);
         color: black;
+    }
+
+    /* home*/
+    #home .container {
+        margin-top: -2em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1em;
+    }
+    
+    #home .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #home .text {
+        text-align: left;
+    }
+    
+    #home .text p {
+        font: 700 1.2em var(--title-font);
+        color: black;
+        margin-left: .2em;
+        margin-bottom: .9em;
+    }
+    
+    #home .text h2 {
+        font: 700 3em var(--title-font);
+        margin-bottom: 0.5em;
+        color: var(--base-color);
+    }
+
+    /* buttom */
+    #home .text a.button {
+        padding: 1.2em 2.5em;
     }
 }
