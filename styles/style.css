@@ -508,6 +508,10 @@ footer .social a:hover {
     }
 
     /* SERVICES */
+    .section#services {
+        margin-bottom: -10em;
+    }
+
     #services .container {
         margin-right: auto;
         margin-left: auto;
@@ -573,8 +577,11 @@ footer .social a:hover {
     }
 
     /* TESTIMONIALS */
-    /* #textimonials .container {
+    #testimonials .testimonials {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } */
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
 }
