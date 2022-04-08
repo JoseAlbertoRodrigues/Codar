@@ -571,7 +571,6 @@ footer .social a:hover {
     
     #services .tel a.button {
         padding: 1.7em 4em;
-        /* margin-top: -4.7em; */
         margin-left: 0.5em;
         border-radius: 1em;
     }
@@ -722,9 +721,48 @@ footer .social a:hover {
         color: var(--base-color);
     }
 
-    /* buttom */
+    /* buttom, home */
     #home .text a.button {
         font-size: 1.6em;
         padding: 1.2em 2.5em;
     }
+
+    /* SERVICES */
+    #services .container {
+        position: relative;
+    }
+
+    #services .tel {
+        bottom: 0;   
+    }
+    
+    .card .title {
+        color: black;
+        font: 400 1.6em var(--title-font);
+        margin-bottom: -.2em;
+        margin-left: -4em;
+    }
+
+    input[type="tel"] {
+        font-size: 1.2em;
+    }
+
+    #services .tel.grid label {
+        display: block;
+        font: 600 1.6em var(--title-font);
+        margin-left: 2.5em;
+        text-align: left;
+        width: 100%;
+    }
+
+    #services .tel input#phone {
+        padding: 1.1em 1.3em;
+        margin-left: 3.5em;
+    }
+    
+    #services .tel a.button {
+        font-size: 1.2em;
+    }
+
+
 }
