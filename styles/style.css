@@ -369,6 +369,7 @@ footer .social a:hover {
     transform: translateY(-8px);
 }
 
+/*========= MEDIA QUERIES =========*/
 /* medium devices: 768 > */
 @media (min-width: 768px) {
     /* reusable classes */
@@ -583,5 +584,60 @@ footer .social a:hover {
         gap: 1em;
         margin-right: 1em;
         margin-left: 1em;
+    }
+
+    /* FOOTER */
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer h2 {
+        font: 400 1.4em var(--title-font);
+    }
+
+    footer p {
+        font: 300 .9em var(--title-font);
+    }
+
+    footer.section {
+        padding: 6rem 0;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    footer .logo {
+        font: 500 2em var(--title-font);
+        font-style: italic;
+    }
+
+    footer .brand a {
+        margin-bottom: .8em;
+    }
+    
+    footer .brand p {
+        color: white;
+        text-align: center;
+        font: 300 .9em var(--title-font);
+    }
+
+    footer .contact a {
+        transition: 0.3s;
+        text-decoration: underline;
+    }
+    
+    footer .contact a:hover {
+        color: green;
+        transform: translateY(-8px);
+    }
+
+    footer i {
+        font-size: 2em;
+        color: var(--base-color);
+    }
+    
+    footer .social .content {
+        display: flex;
+        justify-content: space-between;
     }
 }
