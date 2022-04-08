@@ -399,7 +399,7 @@ footer .social a:hover {
     }
 
     .button {
-        height: 1em;
+        height: 2em;
     }
 
     /* navigation */
@@ -422,7 +422,7 @@ footer .social a:hover {
     nav ul li a:hover {
         background:#c2bbbb;
         color: white;
-        padding: 0.4em  2em;
+        padding: 0.4em  .9em;
         border-radius: 0.4em;
         transition: .3s;
     }
@@ -431,7 +431,6 @@ footer .social a:hover {
         display: inline-flexbox;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 2em;
     }
 
     nav .menu ul li a{
@@ -463,7 +462,7 @@ footer .social a:hover {
         display: inline-flex;
         font: 400 1em var(--title-font);
         height: 2em;
-        padding: 1em 2em;
+        padding: 1em .9em;
         justify-content: center;
         transition: background 0.3s;
     }
@@ -662,7 +661,43 @@ footer .social a:hover {
         font-style: italic;
     }
 
+    
+    /* navigation */
     .button {
-        height: 2.5em;
+        align-items: center;
+        background-color: var(--base-color);
+        border-radius: .6em;
+        color: white;
+        display: inline-flex;
+        font: 400 1em var(--title-font);
+        height: 2em;
+        padding: .4em 2em;
+        justify-content: center;
+        transition: 0.3s;
     }
+
+    .button:hover {
+        background-color: orange;
+        color: black;
+    }
+    
+    nav {
+        height: 6em;
+        font-size: 1.4em;
+        display: flex;
+        padding: 2em auto;
+    }
+
+    nav ul li a:hover {
+        background:#c2bbbb;
+        color: white;
+        padding: .4em 2em;
+        border-radius: 0.6em;
+        transition: .3s;
+    }
+
+    nav .menu {
+        margin-right: -4em;
+    }
+    
 }
