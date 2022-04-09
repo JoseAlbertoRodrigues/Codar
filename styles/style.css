@@ -132,11 +132,7 @@ nav .menu ul {
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
-    gap: 2em;
     margin: 0 3.5em;
-    
-    /* align-items: center;
-    align-content: center; */
 }
 
 nav .menu ul li {
@@ -238,8 +234,6 @@ input[type="tel"] {
 
 #services .tel input#phone {
     padding: 1.1em 1.3em;
-    /* margin: -.6em auto; */
-    /* margin-left: 3.5em; */
     margin-bottom: 1em;
 }
 
@@ -250,7 +244,6 @@ input[type="tel"] {
 
 #services .tel a.button {
     padding: 1.4em 2em;
-    /* margin-left: 3.5em; */
 }
 
 /*==== TESTIMONIALS =======================================*/
@@ -763,6 +756,5 @@ footer .social a:hover {
     #services .tel a.button {
         font-size: 1.2em;
     }
-
 
 }
