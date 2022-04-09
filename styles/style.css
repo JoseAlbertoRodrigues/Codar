@@ -263,7 +263,7 @@ input[type="tel"] {
     height: 80px;
     border-radius: 4em;
     margin: 2em 1em 0 1.5em;
-    background: var(--base-color);]
+    background: var(--base-color);
     display: flex;
 }
 
